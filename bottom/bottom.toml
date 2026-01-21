@@ -1,0 +1,28 @@
+# A TOML plugin for bottom:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "bottom"
+type = "cli"
+
+[platform.linux]
+download-file = "bottom_{arch}-unknown-linux-gnu.tar.gz"
+exe-path = "btm"
+
+[platform.macos]
+download-file = "bottom_{arch}-apple-darwin.tar.gz"
+exe-path = "btm"
+
+[platform.windows]
+archs = ["x86_64"]
+download-file = "bottom_{arch}-pc-windows-msvc.zip"
+exe-path = "btm.exe"
+
+[install]
+download-url = "https://github.com/ClementTsang/bottom/releases/download/{version}/{download_file}"
+
+[install.exes.btm]
+exe-path = "btm"
+primary = true
+
+[resolve]
+git-url = "https://github.com/ClementTsang/bottom"
