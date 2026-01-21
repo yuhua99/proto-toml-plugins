@@ -1,3 +1,6 @@
+# A TOML plugin for neovim:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
 name = "neovim"
 type = "cli"
 [platform.linux]
