@@ -6,6 +6,7 @@ Small collection of TOML plugins for `proto`.
 
 - `bottom`: installs the `btm` CLI from the official bottom releases.
 - `neovim`: installs the `nvim` CLI from the official Neovim releases.
+- `ty`: installs the `ty` CLI from the Astral releases.
 
 ## Usage
 
@@ -15,6 +16,7 @@ Use `--to global` if you want to install the plugin globally, for example:
 
 ```sh
 proto plugin add --to global neovim "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/neovim/neovim.toml"
+proto install -c global neovim "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/neovim/neovim.toml"
 ```
 
 ```sh
@@ -27,7 +29,8 @@ proto plugin add neovim "https://raw.githubusercontent.com/yuhua99/proto-toml-pl
 proto install neovim
 ```
 
-## Layout
+```sh
+proto plugin add ty "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/ty/ty.toml"
+proto install ty
+```
 
-- `bottom/bottom.toml` contains the bottom plugin definition.
-- `neovim/neovim.toml` contains the Neovim plugin definition.
