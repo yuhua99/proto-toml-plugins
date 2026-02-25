@@ -1,0 +1,35 @@
+# A TOML plugin for lazygit:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "lazygit"
+type = "cli"
+
+[platform.linux]
+archs = ["x86_64", "aarch64"]
+download-file = "lazygit_{version}_linux_{arch}.tar.gz"
+exe-path = "lazygit"
+
+[platform.macos]
+archs = ["x86_64", "aarch64"]
+download-file = "lazygit_{version}_darwin_{arch}.tar.gz"
+exe-path = "lazygit"
+
+[platform.windows]
+archs = ["x86_64", "aarch64", "x86"]
+download-file = "lazygit_{version}_windows_{arch}.zip"
+exe-path = "lazygit.exe"
+
+[install]
+download-url = "https://github.com/jesseduffield/lazygit/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "x86_64"
+x86 = "32-bit"
+
+[install.exes.lazygit]
+exe-path = "lazygit"
+primary = true
+
+[resolve]
+git-url = "https://github.com/jesseduffield/lazygit"
