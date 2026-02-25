@@ -5,6 +5,7 @@ Small collection of TOML plugins for `proto`.
 ## Plugins
 
 - `bottom`: installs the `btm` CLI from the official bottom releases.
+- `lazygit`: installs the `lazygit` CLI from the official lazygit releases.
 - `neovim`: installs the `nvim` CLI from the official Neovim releases.
 - `ty`: installs the `ty` CLI from the Astral releases.
 
@@ -25,6 +26,11 @@ proto install bottom
 ```
 
 ```sh
+proto plugin add lazygit "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/lazygit/lazygit.toml"
+proto install lazygit
+```
+
+```sh
 proto plugin add neovim "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/neovim/neovim.toml"
 proto install neovim
 ```
@@ -33,4 +39,3 @@ proto install neovim
 proto plugin add ty "https://raw.githubusercontent.com/yuhua99/proto-toml-plugins/refs/heads/main/ty/ty.toml"
 proto install ty
 ```
-
